@@ -8,6 +8,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {ProductService} from './services/product.service';
 import {NgOptimizedImage} from "@angular/common";
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
