@@ -9,6 +9,8 @@ import {ProductService} from './services/product.service';
 import {NgOptimizedImage} from "@angular/common";
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -17,13 +19,15 @@ import { SearchComponent } from './components/search/search.component';
     AppComponent,
     ProductListComponent,
     ProductCategoryMenuComponent,
-    SearchComponent
+    SearchComponent,
+    ProductDetailsComponent
   ],
     imports: [
         BrowserModule,
         HttpClientModule,
         AppRoutingModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        NgbModule
     ],
   providers: [ProductService],
   bootstrap: [AppComponent]
