@@ -29,6 +29,41 @@
 
 
       </div>
+
+      <!-- Begin footer -->
+      <div class="footer-pagination">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+
+              <div class="col-md-9" style="padding-left: 30%">
+                <ngb-pagination [(page)]="pageNumber"
+                                [collectionSize]="totalElements"
+                                [pageSize]="pageSize"
+                                [maxSize]="5"
+                                [boundaryLinks]="true"
+                                (pageChange)="listProducts()"/>
+              </div>
+
+              <div class="col-md-3 mt-2" style="text-align: right;">
+                <span class="m-2">Page size</span>
+                <select #pageSizeSelect (change)="updatePageSize(pageSizeSelect.value)">
+                  <option selected="true">5</option>
+                  <option>10</option>
+                  <option>20</option>
+                  <option>50</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer -->
+
     </div>
   </div>
 </div>

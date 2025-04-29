@@ -27,7 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         HttpClientModule,
         AppRoutingModule,
         NgOptimizedImage,
-        NgbModule
+        NgbModule,
     ],
   providers: [ProductService],
   bootstrap: [AppComponent]
